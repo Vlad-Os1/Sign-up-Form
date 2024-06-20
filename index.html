@@ -12,45 +12,52 @@
         <img class="logo" src="img/odin-lined.png" alt="Odin Logo">
         <p class="logo-paragraph">Odin</p>
       </div>
-      <div class="bacground-footer">
+      <div class="background-footer">
         <p>Photo by <a href="https://unsplash.com/@malcoo">Tomáš Malík</a> on <a href="https://unsplash.com/">Unsplash</a></p>
       </div>
     </div>
     <div class="content-container">
-      <h1>
-        This is not a real online service! You know you need something
-        like this in your life to help you realize your deepest dreams.
-        Sign up <em>now</em> to get started.
-      </h1>
-      <h1>You <em>know</em> you want to.</h1>
+      <div class="content-heading">
+        <h1>
+          This is not a real online service! You know you need something
+          like this in your life to help you realize your deepest dreams.
+          Sign up <em>now</em> to get started.
+        </h1>
+        <h1>You <em>know</em> you want to.</h1>
+      </div>
+      
       <form action="" method="post" class="form">
-        <div class="form-fname">
-          <label for="fname"></label>
-          <input type="text" id="fname" required>
+        <div class="form-container">
+          <h1>Let's do this!</h1>
+          <div class="form-fname">
+            <label for="fname">first name</label>
+            <input type="text" id="fname" required>
+          </div>
+          <div class="form-field">
+            <label for="surname">last name</label>
+            <input type="text" id="surname" required>
+          </div>
+          <div class="form-field">
+            <label for="email">email</label>
+            <input type="email" id="email">
+          </div>
+          <div class="form-field">
+            <label for="number">phone number</label>
+            <input type="tel" id="number">
+          </div>
+          <div class="form-field">
+            <label for="pwd">password</label>
+            <input type="password" id="pwd" required>
+          </div>
+          <div class="form-field confirm-pwd">
+            <label for="pwd-confirm">confirm password</label>
+            <input type="password" id="pwd-confirm" required>
+          </div>
         </div>
-        <div class="form-surname">
-          <label for="surname"></label>
-          <input type="text" id="surname" required>
-        </div>
-        <div class="form-email">
-          <label for="email"></label>
-          <input type="email" id="email" required>
-        </div>
-        <div class="form-number">
-          <label for="number"></label>
-          <input type="tel" id="number" required>
-        </div>
-        <div class="form-pwd">
-          <label for="pwd"></label>
-          <input type="password" id="pwd" required>
-        </div>
-        <div class="form-pwd confirm">
-          <label for="pwd-confirm"></label>
-          <input type="password" id="pwd-confirm" required>
-        </div>
-        <button type="submit"></button>
+        <button type="submit">Create Account</button>
       </form>
-      <p>Already have an account ? <a href="#">Log in</a></p>
+      <p class="content-login">Already have an account ? <a href="#">Log in</a></p>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
